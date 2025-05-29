@@ -21,13 +21,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var anxiousBtn: ImageButton
     private lateinit var boredBtn: ImageButton
     private lateinit var excitedBtn: ImageButton
-    private lateinit var infoBtn: ImageButton  // info button
+    private lateinit var infoBtn: ImageButton  
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Connect layout buttons to Kotlin code
+    
         happyBtn = findViewById(R.id.happyBtn)
         sadBtn = findViewById(R.id.sadBtn)
         angryBtn = findViewById(R.id.angryBtn)
@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showInstructionsModal() {
         val scrollView = ScrollView(this).apply {
-            setPadding(48, 48, 48, 48)  // padding in pixels, adjust if needed
+            setPadding(48, 48, 48, 48)  
             setBackgroundColor(android.graphics.Color.WHITE)
         }
 
