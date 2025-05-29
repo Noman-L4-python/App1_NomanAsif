@@ -10,7 +10,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.launch_screen)
 
-        // Delay then start MainActivity
+        
         window.decorView.postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()
