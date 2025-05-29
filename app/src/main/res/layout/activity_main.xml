@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="#FFF8E1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How are you feeling today?"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:textColor="#5D4037" />
+
+    <!-- Info button for instructions -->
+    <ImageButton
+        android:id="@+id/infoBtn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Instructions"
+        android:src="@android:drawable/ic_dialog_info"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_marginTop="8dp"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <ImageButton
+            android:id="@+id/happyBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/happy"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Happy" />
+
+        <ImageButton
+            android:id="@+id/sadBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/sad"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Sad" />
+
+        <ImageButton
+            android:id="@+id/angryBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/angry"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Angry" />
+
+        <ImageButton
+            android:id="@+id/tiredBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/tired"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Tired" />
+
+        <ImageButton
+            android:id="@+id/anxiousBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/anxious"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Anxious" />
+
+        <ImageButton
+            android:id="@+id/boredBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/bored"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Bored" />
+
+        <ImageButton
+            android:id="@+id/excitedBtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/excited"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Excited" />
+    </GridLayout>
+
+</LinearLayout>
